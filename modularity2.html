@@ -19,7 +19,7 @@
 	    		<p class="instruction-text">Center multiple arbitrary elements horizontally, with padding.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-						<div>
+						<div class="boxee">
 							<img src="http://placehold.it/160">
 							<img src="http://placehold.it/160">
 							<img src="http://placehold.it/160">
@@ -30,7 +30,7 @@
 	    		<p class="instruction-text">Works with different HTML...</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-						<div>
+						<div class="boxee">
 							<img src="http://placehold.it/120">
 							<img src="http://placehold.it/160">
 				    	<p>Oh hello</p>
@@ -52,7 +52,7 @@
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
 						<div>
-							<div>
+							<div class="vert-space">
 								<img src="http://placehold.it/50">
 								<img src="http://placehold.it/50">
 								<img src="http://placehold.it/50">
@@ -65,7 +65,7 @@
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
 			    	<div>
-							<div>
+							<div class="vert-space">
 								<img src="http://placehold.it/50">
 								<img src="http://placehold.it/20">
 					    	<p>Oh hello</p>
@@ -87,11 +87,13 @@
 	    		<p class="instruction-text">Make the list items horizontal instead of vertical.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
+			    	<div class="horizontal">
 			    	<ul>
 							<li>Ready</li>
 							<li>Fire</li>
 							<li>Aim</li>
 			    	</ul>
+			    	</div>
 				    <!-- End editable area -->
 			    </div>
 			  </li>
@@ -102,18 +104,20 @@
 	    		<p class="instruction-text">Create a set of different-sized buttons.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<a href="#">Buy Now</a>
-			    	<a href="#">Learn More</a>
-			    	<a href="#">OK</a>
+			    	<div class="text-align">
+			    	<a class="button button-large text-align" href="#">Buy Now</a>
+			    	<a class="button button-medium" href="#">Learn More</a>
+			    	<a class="button button-small" href="#">OK</a>
+			    	</div>
 				    <!-- End editable area -->
 			    </div>
 
 	    		<p class="instruction-text">Should work with both &lt;a&gt;, &lt;button&gt;, and &lt;submit&gt; elements.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<a href="#">Learn More</a>
-			    	<input type="button" href="#" value="Accept">
-			    	<input type="submit" href="#" value="Submit">
+			    	<a class="button button-medium" href="#">Learn More</a>
+			    	<input class="button button-medium" type="button" href="#" value="Accept">
+			    	<input class="button button-medium" type="submit" href="#" value="Submit">
 				    <!-- End editable area -->
 			    </div>
 			  </li>
@@ -124,7 +128,7 @@
 	    		<p class="instruction-text">Create a navigation menu with links that are highlighted on hover.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<nav>
+			    	<nav id="navi">
 			    		<ul>
 			    			<li><a href="#">Home</a></li>
 			    			<li><a href="#">Products</a></li>
@@ -143,17 +147,19 @@
 	    		<p class="instruction-text">Style a pagination control for navigating through pages of search results.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<ol>
-			    		<li><a href="#">prev</a></li>
+			    	<div>
+			    	<ol id="pagination">
+			    		<li class="no-under"><a class="no-under" href="#">prev</a></li>
 			    		<li><a href="#">5</a></li>
 			    		<li><a href="#">6</a></li>
 			    		<li><a href="#">7</a></li>
-			    		<li><span>8</span></li>
+			    		<li><a href="#">8</a></li>
 			    		<li><a href="#">9</a></li>
 			    		<li><a href="#">10</a></li>
 			    		<li><a href="#">11</a></li>
-			    		<li><a href="#">next</a></li>
+			    		<li class="no-under" ><a href="#">next</a></li>
 			    	</ol>
+			    	</div>
 				    <!-- End editable area -->
 			    </div>
 			  </li>
@@ -164,61 +170,61 @@
 	    		<p class="instruction-text">Style a stream of user comments.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-				    <div>
-				    	<div>
-					    	<img src="http://gravatar.com/avatar/0?d=identicon">
-					    </div>
-				    	<div>
-				    		<strong>@metaraine</strong>
-					    	<time>Thursday, June 27, 2013, 4:15pm</time>
-					    	<p>Wow, that was an amazing article.</p>
-					    </div>
-					  </div>
+			    	                    <div class="outer-comment">
+			    	                        <div class="comment-image">
+			    	                            <img src="http://gravatar.com/avatar/0?d=identicon">
+			    	                        </div>
+			    	                        <div class="comment">
+			    	                            <strong>@metaraine</strong>
+			    	                            <time>Thursday, June 27, 2013, 4:15pm</time>
+			    	                            <p>Wow, that was an amazing article.</p>
+			    	                        </div>
+			    	                      </div>
 
-				    <div>
-				    	<div>
-					    	<img src="http://gravatar.com/avatar/1?d=identicon">
-					    </div>
-				    	<div>
-				    		<strong>@seandaken</strong>
-					    	<time>Friday, June 28, 2013, 11:02</time>
-					    	<p>I learned 100 new things.</p>
-					    </div>
-					  </div>
+			    	                    <div class="outer-comment">
+			    	                        <div class="comment-image">
+			    	                            <img src="http://gravatar.com/avatar/1?d=identicon">
+			    	                        </div>
+			    	                        <div class="comment" >
+			    	                            <strong>@seandaken</strong>
+			    	                            <time>Friday, June 28, 2013, 11:02</time>
+			    	                            <p>I learned 100 new things.</p>
+			    	                        </div>
+			    	                      </div>
 
-				    <div>
-				    	<div>
-					    	<img src="http://gravatar.com/avatar/0?d=identicon">
-					    </div>
-				    	<div>
-				    		<strong>@metaraine</strong>
-					    	<time>2 hours ago</time>
-					    	<p>How about we have the RefactorU student climb Bear Peak each morning before class?</p>
+			    	                    <div class="outer-comment">
+			    	                        <div class="comment-image">
+			    	                            <img src="http://gravatar.com/avatar/0?d=identicon">
+			    	                        </div>
+			    	                        <div class="comment">
+			    	                            <strong>@metaraine</strong>
+			    	                            <time>2 hours ago</time>
+			    	                            <p>How about we have the RefactorU student climb Bear Peak each morning before class?</p>
 
-						    <div>
-						    	<div>
-							    	<img src="http://gravatar.com/avatar/1?d=identicon&s=60">
-							    </div>
-						    	<div>
-						    		<strong>@seandaken</strong>
-							    	<time>45 minutes ago</time>
-							    	<p>Sure</p>
-							    </div>
-							  </div>
+			    	                            <div>
+			    	                                <div class="comment-image">
+			    	                                    <img src="http://gravatar.com/avatar/1?d=identicon&s=60">
+			    	                                </div>
+			    	                                <div class="comment">
+			    	                                    <strong>@seandaken</strong>
+			    	                                    <time>45 minutes ago</time>
+			    	                                    <p>Sure</p>
+			    	                                </div>
+			    	                              </div>
 
-						    <div>
-						    	<div>
-							    	<img src="http://gravatar.com/avatar/2?d=identicon&s=60">
-							    </div>
-						    	<div>
-						    		<strong>@nullempire</strong>
-							    	<time>just now</time>
-							    	<p>No!</p>
-							    </div>
-							  </div>
-							</div>
-				    </div>
-					    <!-- End editable area -->
+			    	                            <div>
+			    	                                <div class="comment-image">
+			    	                                    <img src="http://gravatar.com/avatar/2?d=identicon&s=60">
+			    	                                </div>
+			    	                                <div class="comment">
+			    	                                    <strong>@nullempire</strong>
+			    	                                    <time>just now</time>
+			    	                                    <p>No!</p>
+			    	                                </div>
+			    	                              </div>
+			    	                            </div>
+			    	                    </div>
+			    	                        <!-- End editable area -->
 			    </div>
 			  </li>
 
